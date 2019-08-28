@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: feign-service
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1111/eureka/
+server:
+  port: 1116
+feign:
+  hystrix:
+    enabled: true   # 开启feign的断路器
